@@ -7,10 +7,9 @@
 
       
 ___
-<center>
+<center> 
 
-#### Información personal
-</center>
+#### Información personal </center>
 
 ****
 - **Nombre:** *Víctor Manuel Rendón García*

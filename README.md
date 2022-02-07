@@ -17,4 +17,3 @@ ___
 - **Semestre:** *6*
 - **Materia:** *Programación Web*
 - **Grupo:** *06A*
-

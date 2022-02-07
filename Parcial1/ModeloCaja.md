@@ -2,6 +2,7 @@
 
 # Box Model
 
+
 ## Modelo de caja
 ___
 ![s](https://www.creatuwebnicaragua.com/wp-content/uploads/2015/08/modelo-de-caja.gif)
@@ -64,6 +65,7 @@ Para referenciar una zona en específico de algún elemento, se utilizan los sig
 - ***Right:*** Lado derecho.
 - ***Bottom:*** Parte inferior.
 - ***Center:*** Parte central.
+  
 ![s](https://lenguajecss.com/css/modelo-de-cajas/que-es/positions.png)
 
 

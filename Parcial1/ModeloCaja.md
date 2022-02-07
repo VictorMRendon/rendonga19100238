@@ -13,14 +13,14 @@ ___
 ___
 <center> 
 
-#### Descripción </center>
+#### **Descripción** </center>
 
 ****
 Un *modelo de caja* es un sistema que tiene el navegador para interpretar las distintas partes de un elemento HTML. Dicho modelo condiciona el diseño de todas las páginas web, ya que logra representar todos los elementos de una página en cajas rectangulares. Gracias al CSS, se pueden modificar todas sus características. 
 ______
  <center> 
  
-#### Propiedades </center>
+#### **Propiedades** </center>
 
 ****
 - ***Margin (Márgen):*** Es la parte exterior del elemento, encargada de separarlo de las demás cajas.
@@ -38,7 +38,7 @@ ______
 ______
  <center> 
  
-#### Dimensiones </center>
+#### **Dimensiones** </center>
 ****
 Para asignarle un tamaño de los elementos HTML de la página web, es necesario modificar sus propiedades:
 - ***width (ancho).***
@@ -57,7 +57,7 @@ Se pueden establecer rangos máximos a estas propiedades:
 _____
  <center> 
  
-#### Zonas </center>
+#### **Zonas** </center>
 ****
 Para referenciar una zona en específico de algún elemento, se utilizan los siguientes conceptos:
 - ***Top:*** Parte superior.
@@ -72,7 +72,7 @@ Para referenciar una zona en específico de algún elemento, se utilizan los sig
 _____
  <center> 
  
-#### Posicionamiento </center>
+#### **Posicionamiento** </center>
 ****
 Gracias al CSS es posible posicionar a voluntad cualquier elemento en una zona en específico de la página web. 
 
@@ -113,7 +113,7 @@ ______
 ___
 <center> 
 
-#### Información personal </center>
+#### **Información personal** </center>
 
 ****
 - **Materia:** *Programación Web*

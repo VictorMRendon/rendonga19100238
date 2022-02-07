@@ -1,6 +1,7 @@
 <center>
 
 # Box Model
+___
 ### Modelo de caja
 ![s](https://www.creatuwebnicaragua.com/wp-content/uploads/2015/08/modelo-de-caja.gif)
 

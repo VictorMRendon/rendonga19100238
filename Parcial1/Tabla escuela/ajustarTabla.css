@@ -1,0 +1,14 @@
+.Caja1{
+    padding-bottom: 10px;
+}
+
+#TablaNormal{
+    width: 75%;
+    border-collapse: collapse;
+    
+}
+
+thead{
+    background-color: black;
+    color: white;
+}

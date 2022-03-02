@@ -4,7 +4,7 @@
             display: block;
         }
 
-        tr { border: 1px solid #ccc; }
+        tr { border: 2px solid rgb(6, 206, 206); }
 
         
         thead tr {
@@ -31,7 +31,7 @@
 
         #TablaResponsiva{
             
-            border: 5px rgba(56, 127, 221, 0.938) inset;
+            border: 5px rgba(20, 87, 173, 0.938) inset;
             border-spacing: 50px;
             border-collapse: collapse;
         }

@@ -1,10 +1,12 @@
 
   
   div.Contenido {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(208, 211, 212);
     margin-left: 100px;    
     padding: 1px 16px;
     height: auto; transition: all 500ms ease;
+    
+ 
   }
 
 
@@ -12,13 +14,21 @@
   .ModContenido{
     box-shadow: 10px 15px 40px rgba(0,0,0, 0.5);
     padding-bottom: 50px;
-    margin-top: 10px;   margin-left: 150px; margin-bottom: 10px;
+    margin-top: 10px;   margin-left: 150px; margin-bottom: 150px;
     width: 900px;
     height:auto;
-    background: #ffffff;
+    background-color: rgb(247, 249, 249 );
+    
     text-align: center;
     border-radius: 5px;
     font-family: 'Fredoka', sans-serif;
+
+    /* background-image: url(https://raw.githubusercontent.com/VictorMRendon/rendonga19100238/master/Parcial1/BarraLateralResponsiva/Imagenes/Logo1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.3; */
+
 }
 
 p{
@@ -56,6 +66,8 @@ h1{
 svg{
     margin-right: 3px;
 }
+
+.Imagen{   width: 100%;  }
 
 #Home:target,
 #Servicios:target,

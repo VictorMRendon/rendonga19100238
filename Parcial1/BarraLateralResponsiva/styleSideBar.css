@@ -69,6 +69,8 @@
     #Mapa2 {display: block;}
     #Mapa1,
     #Mapa3{ display: none;}
+
+    .Imagen{   width: 80%;  }
   }
   
   @media screen and (max-width: 600px) {
@@ -88,4 +90,6 @@
     #Mapa3 {display: block;}
     #Mapa1,
     #Mapa2{ display: none;}
+
+    .Imagen{  width: 100%; }
   }

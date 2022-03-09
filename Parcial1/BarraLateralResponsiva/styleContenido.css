@@ -1,0 +1,62 @@
+
+  
+  div.Contenido {
+    background-color: rgb(255, 255, 255);
+    margin-left: 100px;    
+    padding: 1px 16px;
+    height: auto; transition: all 500ms ease;
+  }
+
+
+
+  .ModContenido{
+    box-shadow: 10px 15px 40px rgba(0,0,0, 0.5);
+    padding-bottom: 50px;
+    margin-top: 10px;   margin-left: 150px; margin-bottom: 10px;
+    width: 900px;
+    height:auto;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+p{
+    padding-left: 10px; padding-right: 10px; padding-top: 25px;
+    text-align: justify;
+}
+
+ul{
+    padding-left: 55px; padding-right: 10px;
+    text-align: justify;    
+}
+li{
+    padding-left: 5px; padding-top: 5px;
+}
+
+h1{
+    color: rgb(235, 245, 251 );
+    background-color: rgb(52, 152, 219 );
+    height: 45px;
+    border-radius: 5px;
+    padding-top: 5px; padding-bottom: 5px; 
+   
+}
+
+    #WhatsApp{
+        fill: rgb(25, 199, 25);
+        width: 20px; height: 20px
+    }
+
+    #Mail{
+        fill: rgb(212, 28, 28);
+        width: 20px; height: 20px
+    }
+    
+svg{
+    margin-right: 3px;
+}
+
+#Home:target,
+#Servicios:target,
+#Direccion:target { display: block; transition: all 500ms ease;}

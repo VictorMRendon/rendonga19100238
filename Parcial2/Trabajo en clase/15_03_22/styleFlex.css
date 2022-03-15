@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Contenedor1{
+    display: flex;
+    width:100vw;
+    height: 250px;
+    background-color: black;
+    color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-end;
+
+}
+
+.caja1  {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(4, 139, 139);
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.Contenedor2{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(1, 29, 88);
+    color: white;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja2{
+    width: 150px;
+    height: 60px;
+    background-color: rgb(33, 124, 167);
+    margin: 10px;
+    flex-shrink: 1;
+}

@@ -51,7 +51,7 @@ ___
 
 ****
 
-####Dirección de los ejes
+#### Dirección de los ejes
 |Propiedad  |Valores |Funcionamiento |
 |-----------|--------|---------------|
 |flex-direction|  row / row-reverse /column / column-reverse|Cambia la orientación del eje principal.   
@@ -68,7 +68,7 @@ ___
 |           |wrap|2.- Establece los ítems en modo multilínea (permite que se desborde el contenedor).|
 |           |wrap-reverse|3.- Establece los ítems en modo multilínea, pero en dirección inversa.|
 
-####Alineación
+#### Alineación
 |Propiedad  |Valores |Funcionamiento |
 |-----------|--------|---------------|
 |justify-content|flex-start / flex-end / center / space-between / space-around / space-evenly|Da direccionamiento a los elementos hijos en el eje principal (u horizontal).|
@@ -76,7 +76,7 @@ ___
 |align-items|flex-start / flex-end / center / stretch / baseline|Permite distribuir los elementos en un eje, pero esta vez en el eje vertical.|
 |align-self|auto / flex-start / flex-end / center / stretch / baseline|Especifica la alineación del elemento seleccionado dentro del FlexBox.|
 
-######Descrición de los valores
+###### Descrición de los valores
 |Propiedad  |Valores |Funcionamiento |
 |-----------|--------|---------------|
 |justify-content|flex-start|1.- 	Agrupa los ítems al principio del eje principal.|

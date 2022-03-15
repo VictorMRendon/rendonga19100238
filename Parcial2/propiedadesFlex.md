@@ -57,7 +57,7 @@ ___
 |flex-direction|  row / row-reverse /column / column-reverse|Cambia la orientación del eje principal.   
 |flex-wrap|nowrap / wrap / wrap-reverse|Evita o permite el desbordamiento (multilínea).   |
 
-######Descrición de los valores
+###### Descrición de los valores
 |Propiedad  |Valores |Funcionamiento |
 |-----------|--------|---------------|
 |flex-direction|row|1.- Establece la dirección del eje principal en horizontal.|

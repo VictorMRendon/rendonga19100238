@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-weight: bold;
+    text-align: center;
+ }
+ .Contenedor1 {
+    width:100vw;
+    height:100vh;
+    background-color: blue;
+    display:grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 70% 10%;
+    justify-content: center;
+    align-content: center;
+
+    grid-template-areas: 'header header'
+                          'sidebar contenido'
+                         'footer footer';
+ }
+ .caja1 {
+    background-color:rgb(182, 187, 187);
+    text-align:center;
+    border: 1px solid black;
+    border-radius: 1px;
+ }
+ #header {
+     grid-area: header;
+     background-color: rgb(245, 183, 177 );
+ }
+
+ #sidebar{
+    grid-area: sidebar;
+    background-color: rgb(174, 214, 241 );
+ }
+
+ #contenido{
+     grid-area: contenido;
+     background-color: rgb(39, 174, 96)
+ }
+
+ #footer{
+     grid-area: footer;
+ }

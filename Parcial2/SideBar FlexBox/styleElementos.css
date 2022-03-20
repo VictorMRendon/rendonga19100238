@@ -4,9 +4,74 @@ a{
     width: 100%;
 }
 
+h1{
+    color: rgb(235, 245, 251 );
+    background-color: rgb(52, 152, 219 );
+    height: 45px;
+    border-radius: 5px;
+    padding-top: 5px; padding-bottom: 5px; 
+   
+}
+
+h3 {
+    color: rgb(133, 193, 233  );
+} 
+
+p{
+    padding: 10px;
+    text-align: justify;
+    font-size: 21px;
+}
+ul{
+    padding-left: 75px; padding-right: 10px;
+    text-align: justify; 
+    font-size: 21px;
+   
+}
+
 #Icon{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     padding-left: 10px; padding-top: 10px;
 }
+
+
+
+#WhatsApp{
+    fill: rgb(25, 199, 25);
+    width: 20px; height: 20px
+}
+
+#Mail{
+    fill: rgb(212, 28, 28);
+    width: 20px; height: 20px
+}
+
+svg{
+margin-right: 3px;
+}
+
+  
+div.Contenido {
+    background-color: rgb(255, 255, 255);
+    height: auto; transition: all 500ms ease;
+  }
+
+
+  .ModContenido{
+
+    box-shadow: 10px 15px 40px rgba(0,0,0, 0.5);
+    margin-left: 55px; margin-right: 55px; margin-top: 55px;
+    padding-bottom: 8px;
+    background-color: rgb(247, 249, 249 );
+    text-align: center;
+    width: auto; 
+    border-radius: 5px;
+    font-family: 'Fredoka', sans-serif;
+
+}
+
+#Home:target,
+#Servicios:target,
+#Direccion:target { display: block; transition: all 500ms ease;}
 

@@ -1,3 +1,5 @@
+#Mapa2,
+#Mapa3{ display: none;}
 
 * {
     box-sizing:border-box;
@@ -8,10 +10,11 @@
 .Principal{
     display: flex;
     font-display: row;
-    flex-wrap: wrap;
-    width: 100vw; /**/
-    height: 100vh;  /**/
+    flex-wrap: nowrap;
+    width: 100vw; 
+    height: 100vh;
     transition: all 1500ms ease;
+    justify-content: center;
 
 }
 
@@ -27,18 +30,20 @@
     justify-content: flex-start;
 
 }
+.contenidoOpcion { display: none; transition: all 500ms ease;}
+
 
 input {display: none; transition: all 1500ms ease }
-  
+
   input:checked + .Menu{
     display: none;
     transition: all 1500ms ease;
     width:0px; 
   }
-  
+
   input:checked ~ div.Contenido {
     margin-left: 0px;  transition: all 1500ms ease;
-  }  
+  }
 
 a:hover {
     background-color: rgb(40, 55, 71 );
@@ -50,12 +55,9 @@ a:hover {
     flex-grow: 1;
     text-align: center;
     transition: all 1500ms ease;
+    align-self: start;
 
-}
 
- /*Demostracion*/
-h1.Principal{
-    background-color: rgb(238, 255, 0);
 }
 
 @media screen and (max-width: 1000px) {
@@ -76,15 +78,25 @@ h1.Principal{
     }
     .Contenido{
         transition: all 1500ms ease;
-
+        text-align: center;
+        align-self: center;
     }
+    #Icon{
+        justify-content: flex-start !important;
+    }
+
+    #Mapa2 {
+        display: block;
+        padding: 15px;
+        
+    }
+    #Mapa1,
+    #Mapa3{ display: none;}
 }
 
 @media screen and (max-width: 750px) {
     .Principal{
         flex-direction: column;
-        transition: all 1500ms ease;
-        transition: all 1500ms ease;
 
     }
 
@@ -103,7 +115,16 @@ h1.Principal{
 
     .Contenido{
         transition: all 1500ms ease;
+        width: auto;height: auto;
 
     }
+
+    #Mapa3 {
+        display: block;
+        padding: 10px;
+    }
+    #Mapa1,
+    #Mapa2{ display: none;}
+
 
 }

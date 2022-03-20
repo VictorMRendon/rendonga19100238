@@ -4,3 +4,9 @@ a{
     width: 100%;
 }
 
+#Icon{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px; padding-top: 10px;
+}
+

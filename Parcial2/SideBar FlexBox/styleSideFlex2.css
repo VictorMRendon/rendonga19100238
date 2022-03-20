@@ -11,18 +11,34 @@
     flex-wrap: wrap;
     width: 100vw; /**/
     height: 100vh;  /**/
-    transition: all 500ms ease;
+    transition: all 1500ms ease;
+
 }
 
 .Menu{
+
     background-color: rgb(52, 73, 94);
     padding: 10px;
     display: flex;
+    transition: all 1500ms ease;
+
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    transition: all 500ms ease;
+
 }
+
+input {display: none; transition: all 1500ms ease }
+  
+  input:checked + .Menu{
+    display: none;
+    transition: all 1500ms ease;
+    width:0px; 
+  }
+  
+  input:checked ~ div.Contenido {
+    margin-left: 0px;  transition: all 1500ms ease;
+  }  
 
 a:hover {
     background-color: rgb(40, 55, 71 );
@@ -33,6 +49,8 @@ a:hover {
     background-color: rgb(255, 255, 255);
     flex-grow: 1;
     text-align: center;
+    transition: all 1500ms ease;
+
 }
 
  /*Demostracion*/
@@ -42,24 +60,32 @@ h1.Principal{
 
 @media screen and (max-width: 1000px) {
 
-
     .Principal{
         flex-direction: column;
     }
 
     .Menu{
         flex-direction: row;
-        justify-content: space-evenly
+        justify-content: space-evenly;
+        transition: all 1500ms ease;
+
     }
 
     a{
         text-align: center;
+    }
+    .Contenido{
+        transition: all 1500ms ease;
+
     }
 }
 
 @media screen and (max-width: 750px) {
     .Principal{
         flex-direction: column;
+        transition: all 1500ms ease;
+        transition: all 1500ms ease;
+
     }
 
     .Menu{
@@ -67,10 +93,17 @@ h1.Principal{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transition: all 1500ms ease
+
     }
     a{
         padding: 10px !important; 
         text-align: center;
+    }
+
+    .Contenido{
+        transition: all 1500ms ease;
+
     }
 
 }

@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+}
+
+
+.Principal{
+    background-color: rgb(41, 81, 201);
+    width:100vw;
+    height:100vh;
+    color: white;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% repeat(2,37.5%) 10%;
+
+    grid-template-areas: 'titulo titulo '
+                         'sec1 sec2'
+                         'sec4 sec3'
+                         'PP PP';
+    justify-content: center;
+    justify-items: center;
+    align-content: space-between;
+    align-items: stretch;
+}
+
+#Titulo{
+    grid-area: titulo;
+    background-color: black;
+    width: 100%; height: 100%;
+    justify-content: center;
+    text-align: center;
+
+    display: grid;
+    place-items: center;
+}
+
+#PP{
+    grid-area: PP;
+    background-color: green;
+    width: 100%; height: 100%;
+    
+    justify-content: center;
+    text-align: center;
+
+    display: grid;
+    place-items: center;
+}
+
+#Sec1{
+    grid-area: sec1;
+}
+
+#Sec2{
+    grid-area: sec2;
+}
+#Sec3{
+    grid-area: sec3;
+}
+#Sec4{
+    grid-area: sec4;
+}
+
+section{
+    background-color: aqua;
+    
+    width: 100%; height: 100%;
+    justify-content: center;
+    text-align: center;
+    border: 0px solid black;
+    display: grid;
+    place-items: center;
+    overflow: auto;
+}
+
+section::-webkit-scrollbar{
+    width: 1px;
+}

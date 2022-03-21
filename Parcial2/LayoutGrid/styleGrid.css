@@ -4,10 +4,8 @@
 
 
 .Principal{
-    background-color: rgb(41, 81, 201);
     width:100vw;
     height:100vh;
-    color: white;
     display:grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 15% repeat(2,37.5%) 10%;
@@ -24,7 +22,7 @@
 
 #Titulo{
     grid-area: titulo;
-    background-color: black;
+    background-color: aqua;
     width: 100%; height: 100%;
     justify-content: center;
     text-align: center;
@@ -60,7 +58,6 @@
 }
 
 section{
-    background-color: aqua;
     
     width: 100%; height: 100%;
     justify-content: center;
@@ -72,5 +69,5 @@ section{
 }
 
 section::-webkit-scrollbar{
-    width: 1px;
+    width: 10px;
 }

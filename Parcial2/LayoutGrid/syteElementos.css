@@ -7,3 +7,28 @@
     border-radius: 25px;
     border-right: 3px solid rgb(41, 81, 201);
  } */
+
+ #Titulo{
+    /*background-color: rgb(125, 206, 160);*/
+    background:linear-gradient( rgb(34, 153, 84), rgb(169, 223, 191 ));
+    
+    justify-content: center;
+    text-align: center;
+    /* border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; */
+    border-radius: 0px 0px 25px 25px;
+ }
+
+ #Sec1{
+    background-image: url();
+}
+
+#Sec2{
+    background-image: url();
+}
+#Sec3{
+    background-image: url();
+}
+#Sec4{
+    background-image: url();
+}

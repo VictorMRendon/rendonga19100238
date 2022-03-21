@@ -22,11 +22,7 @@
 
 #Titulo{
     grid-area: titulo;
-    background-color: aqua;
     width: 100%; height: 100%;
-    justify-content: center;
-    text-align: center;
-
     display: grid;
     place-items: center;
 }

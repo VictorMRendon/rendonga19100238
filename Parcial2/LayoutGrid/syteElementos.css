@@ -8,6 +8,13 @@
     border-right: 3px solid rgb(41, 81, 201);
  } */
 
+ .contenido{
+     text-align: center;
+     justify-content: center;
+     position:  100% 50%;
+
+ }
+
  #Titulo{
     /*background-color: rgb(125, 206, 160);*/
     background:linear-gradient( rgb(34, 153, 84), rgb(169, 223, 191 ));
@@ -19,16 +26,44 @@
     border-radius: 0px 0px 25px 25px;
  }
 
- #Sec1{
-    background-image: url();
+ h3{ 
+     color: rgb(242, 243, 244 );
+    border-radius: 15px;
+    font-size: 50px;
+    position:  100% 50%;
+ }
+ #T1{ background-color: rgb(93, 173, 226);  width: 100% !important;}
+ #T2{ background-color: rgb(241, 196, 15);  }
+ #T3{ background-color: rgb(192, 57, 43); }
+ #T4{ background-color: rgb(142, 68, 173);  width: 95%;}
+
+
+ #img{
+    /* background-image: url(https://github.com/VictorMRendon/rendonga19100238/blob/master/Parcial2/LayoutGrid/img/iyc.png?raw=true); */
+    height: 100%; width: 100%;
+    position: 100% 50%;
+}    
+
+
+#img2{
+     width: 40%;
+    position: 100% 50%;
+}
+#img3{
+    width: 22%;
+   position: 100% 50%;
 }
 
-#Sec2{
-    background-image: url();
+#img4{
+
+     width: 25%;
+    position: 100% 50%;
 }
-#Sec3{
-    background-image: url();
-}
-#Sec4{
-    background-image: url();
+
+#PP{
+    background:radial-gradient( rgb(245, 183, 177 ),rgb(203, 67, 53));
+
+    color: white;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

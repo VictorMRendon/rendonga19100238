@@ -29,13 +29,13 @@
  h3{ 
      color: rgb(242, 243, 244 );
     border-radius: 15px;
-    font-size: 50px;
+    font-size: 45px;
     position:  100% 50%;
  }
  #T1{ background-color: rgb(93, 173, 226);  width: 100% !important;}
  #T2{ background-color: rgb(241, 196, 15);  }
  #T3{ background-color: rgb(192, 57, 43); }
- #T4{ background-color: rgb(142, 68, 173);  width: 95%;}
+ #T4{ background-color: rgb(142, 68, 173);  width: 100%;}
 
 
  #img{

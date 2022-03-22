@@ -67,3 +67,40 @@ section{
 section::-webkit-scrollbar{
     width: 10px;
 }
+
+
+@media screen and (max-width: 800px)  {
+    #imgTitulo{
+        display: block;
+    }
+    
+    img{
+        display: none;
+    }
+
+    
+    .Principal{
+        width:100vw;
+        height:100vh;
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% repeat(4,17.5%) 10%;
+    
+        grid-template-areas: 'titulo '
+                             'sec1'
+                             'sec2'
+                             'sec3'
+                             'sec4'
+                             'PP';
+    }
+
+    h3{ 
+       font-size: 35px !important;
+       padding: 10px 5px 10px 5px;
+    }
+
+    #PP{
+       
+        font-size: 20px !important;
+    }
+}

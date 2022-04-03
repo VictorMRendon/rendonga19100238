@@ -47,4 +47,20 @@ El evento ***capturing*** es lo inverso al evento ***bubbling***, ya que empezar
 
 - **type:** Se especifica el tipo de evento.
 - **listener:** Establecemos la función que se ejecutará.
-- **userCapture:** Valor booleano. El valor booleano indica la fase del evento. De forma predeterminada, useCapture es **false**. Significa que está en la fase _bubbling_; por el contrario, si useCapture es **true**, estaremos trabajando en con la fase _capturing_.
+- **userCapture:** Valor booleano. El valor booleano indica la fase del evento. De forma predeterminada, useCapture es **false**. Significa que está en la fase _bubbling_; por el contrario, si useCapture es **true**, estaremos trabajando con la fase _capturing_.
+  
+  ![s](https://raw.githubusercontent.com/VictorMRendon/rendonga19100238/master/Parcial2/LayoutGrid/img/cod.png)
+
+  
+___
+<center> 
+
+#### **Información personal** </center>
+
+****
+- **Materia:** *Programación Web*
+- **Nombre:** *Víctor Manuel Rendón García*
+- **No.Control:** *19100238*
+- **Parcial:** *2*
+- **Tarea:** *Eventos JS*
+- **Fecha de entrega:** *02/04/2022*

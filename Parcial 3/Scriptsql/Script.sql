@@ -1,5 +1,5 @@
-create database 19100238;
-use 19100238;
+create database L19100238;
+use L19100238;
 
 create table empleado(
 idEmpleado smallint not null auto_increment,

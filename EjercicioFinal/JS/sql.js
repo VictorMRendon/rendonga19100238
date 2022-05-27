@@ -1,6 +1,6 @@
-$('#btnSQL').ready(function(){
+$(document).ready(function(){
 
-    document.getElementById("btnSQL").addEventListener("click",function(){
+    document.getElementById("btnBuscar").addEventListener("click",function(){
         //let parid=prompt("Teclee el ID a consultar");
 
         //$.post('conexion.php','json');
@@ -29,5 +29,46 @@ $('#btnSQL').ready(function(){
                 $('#ciudad').val(consulta.Ciudad);
   }
 
-   
+  document.getElementById("btnNuevo").addEventListener("click",function(){
+  
+    
+    limpiarCampos();
+  
+  });
+  function limpiarCampos(){
+    $('#nom').val("");
+    $('#ape').val();  
+    $('#curp').val();
+    $('#FechanNaciM').val();
+    $('#sexo').val();
+    $('#dire').val();
+    $('#tel').val();
+    $('#pais').val();
+    $('#estado').val();
+    $('#ciudad').val();
+  }
+
+
+
+   document.getElementById("btnEliminar").addEventListener("click",function(){
+  
+    
+    MostrarConfirmacion();
+  
+  });
+
+  function MostrarConfirmacion(){
+    $('#btnEliminar').click(function(){
+      if(true )
+      {
+        swal("Eliminado","Se a eliminado el registro.","success");
+
+      }
+      else{
+        swal("Eliminado","Se a eliminado el registro.","error");
+
+      }
+      
+  });
+  }
 });

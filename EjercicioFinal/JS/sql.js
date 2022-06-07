@@ -3,18 +3,25 @@ $(document).ready(function(){
     BloquearCampos(true);
 
     document.getElementById("btnBuscar").addEventListener("click",function(){
-        //let parid=prompt("Teclee el ID a consultar");
+     
+        swal("Ingresa el ID a consultar:", {
+          content: "input",
+        }).then((id) => {
+          try {    
+                $.post('PHP/conexion.php',{par1:id},function(data){      
+                  refrescar(data);                
+                },'json');
+            } catch (exception) {
+                  swal("Error", "Ha ocurrido un error", "error");
+            }
+        });
 
-        //$.post('conexion.php','json');
+        
+        // let parid=prompt("Teclee el ID a consultar");
 
-       // let promesa = fetch('conexion.php');
-        //promesa.then(function(respuesta){ console.log(respuesta); console.log(respuesta.json() ); });
-
-        let parid=prompt("Teclee el ID a consultar");
-
-        $.post('PHP/conexion.php',{par1:parid},function(data){
-          refrescar(data);
-          },'json');
+        // $.post('PHP/conexion.php',{par1:parid},function(data){
+        //   refrescar(data);
+        //   },'json');
 
     });
     function refrescar(consulta) {
@@ -91,44 +98,82 @@ $(document).ready(function(){
   });
 
   document.getElementById("btnMod").addEventListener("click",function(){
-    let strID = document.getElementById("idn").value;
-    let strNombre = document.getElementById("nom").value;
-    let strApellidos = document.getElementById("ape").value;
-    let strCurp = document.getElementById("curp").value;
-    let strFecha = document.getElementById("FechanNaciM").value;
-    let strDireccion = document.getElementById("dire").value;
-    let strGenero = document.getElementById("sexo").value;
-    let strTelefono = document.getElementById("tel").value;
-    let strPais = document.getElementById("pais").value;
-    let strEstado = document.getElementById("estado").value;
-    let strCiudad = document.getElementById("ciudad").value;
 
-    
-    $.post('PHP/editEmpleado.php',{ par01:strID,
-                                    par1:strNombre,
-                                    par2:strApellidos,
-                                    par3:strCurp,
-                                    par4:strFecha,
-                                    par5:strDireccion,
-                                    par6:strGenero,
-                                    par7:strTelefono,
-                                    par8:strPais,
-                                    par9:strEstado,
-                                    par10:strCiudad},function (data){
-                                  
-      },'json');
+    if(ValidarVacios()){
+      swal("Advertencia", "Favor de seleccionar un registro para modificar.", "warning");
+      BloquearCampos(true);
+    }
+    else {
 
-    swal("Operación completa", "Se modificó el registro correctamente", "success");  
+      if(document.getElementById("nom").disabled==true){
+        BloquearCampos(false);
+
+      }
+      else{
+        let strID = document.getElementById("idn").value;
+      let strNombre = document.getElementById("nom").value;
+      let strApellidos = document.getElementById("ape").value;
+      let strCurp = document.getElementById("curp").value;
+      let strFecha = document.getElementById("FechanNaciM").value;
+      let strDireccion = document.getElementById("dire").value;
+      let strGenero = document.getElementById("sexo").value;
+      let strTelefono = document.getElementById("tel").value;
+      let strPais = document.getElementById("pais").value;
+      let strEstado = document.getElementById("estado").value;
+      let strCiudad = document.getElementById("ciudad").value;
+  
+      
+      $.post('PHP/editEmpleado.php',{ par01:strID,
+                                      par1:strNombre,
+                                      par2:strApellidos,
+                                      par3:strCurp,
+                                      par4:strFecha,
+                                      par5:strGenero,
+                                      par6:strDireccion,
+                                      par7:strTelefono,
+                                      par8:strPais,
+                                      par9:strEstado,
+                                      par10:strCiudad},function (data){
+                                    
+        },'json');
+  
+      swal("Operación completa", "Se modificó el registro correctamente", "success");
+      BloquearCampos(true);
+
+      }
+      
+      
+    }
+
+      
 });
 
   document.getElementById("btnEliminar").addEventListener("click",function(){
   
     
-    //limpiarCampos();  
+    
     try{
-      var strID = document.getElementById("idn").value;          
+
+      swal({
+        title: "Confirmar Operación",
+        text: "¿Desea eliminar el registro actual?",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+          var strID = document.getElementById("idn").value;          
           $.post('PHP/deleteEmpleado.php',{ var1:strID},function (data){ },'json');
+          limpiarCampos();
           swal("Registro eliminado", "Operación excitosa.", "success");
+          swal("Registro eliminado", "Operación excitosa.", "success");
+        } else {
+          swal("Se ha cancelado la operación.", "Operación cancelada","info");
+        }
+      });
+
+      
     }
 
     catch(exception){
@@ -156,16 +201,12 @@ $(document).ready(function(){
     $('#pais').val("");
     $('#estado').val("");
     $('#ciudad').val("");
+    swal("Operación excitosa.", "Formulario listo para un nuevo registro.", "success");
   }
 
 
 
-   document.getElementById("btnEliminar").addEventListener("click",function(){
-  
-    
-    MostrarConfirmacion();
-  
-  });
+
 
   function BloquearCampos(estado){
     document.getElementById("idn").disabled=true;

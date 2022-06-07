@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    BloquearCampos(true);
+    //BloquearCampos(true);
 
     document.getElementById("btnBuscar").addEventListener("click",function(){
      
@@ -8,11 +8,11 @@ $(document).ready(function(){
           content: "input",
         }).then((id) => {
           try {    
-                $.post('PHP/conexion.php',{par1:id},function(data){      
-                  refrescar(data);                
-                },'json');
+                $.post('PHP/conexion.php',{par1:id},function(data){    
+                  BloquearCampos(true);  
+                  refrescar(data);  },'json');
             } catch (exception) {
-                  swal("Error", "Ha ocurrido un error", "error");
+                  swal("Error", "Ha ocurrido al conectar con la Base de datos.", "error");
             }
         });
 

@@ -3,7 +3,7 @@
 $iduser=$_POST['par1'];
 
 $host ='localhost'; 
-$database = 'l19100238';
+$database = 'v19100238';
 $username='root';
 $password='';
 $port='3306';
@@ -22,7 +22,7 @@ try {
 try {
 //$consultaSql = "select * from empleado where idcliente=".$iduser;
 
-$consultaSql = "select * from empleado where idEmpleado=".$iduser;
+$consultaSql = "select * from empleados where idEmpleado=".$iduser;
 $consulta = $con -> prepare($consultaSql);
 $consulta -> execute();
 $resultado = $consulta->fetch(PDO::FETCH_ASSOC);

@@ -22,11 +22,15 @@
             <h3 class="h4"> Datos personales </h3>
             <div class="border-top border-info">
                 <div class="row p-1">
-                    <div class="form-group col-sm-12 col-md-6 col-lg-6 mt-2" ><!--     -->
+                    <div class="form-group col-sm-12 col-md-4 col-lg-4 mt-2" ><!--     -->
+                        <label for="idn">ID</label>
+                        <input id="idn" type="text" class="form-control"  placeholder="" disabled="" />
+                    </div>
+                    <div class="form-group col-sm-12 col-md-4 col-lg-4 mt-2" ><!--     -->
                         <label for="nom">Nombre(s)</label>
                         <input id="nom" type="text" class="form-control" placeholder="Escriba su nombre..." />
                     </div>
-                    <div class="form-group col-sm-12 col-md-6 col-lg-6 mt-2" >
+                    <div class="form-group col-sm-12 col-md-4 col-lg-4 mt-2" >
                             <label for="ape" class="control-label">Apellidos</label>
                             <input id="ape" type="text" class="form-control" placeholder="Escriba sus apellidos..." />
                     </div>
@@ -40,7 +44,7 @@
 
                     </div>
                     <div class="form-group col-sm-12 col-md-6 col-lg-4 mt-2"> <!-- Fecha Nacimiento -->
-                        <label for="Fecha de Nacimiento" class="label font-weight-bold">Fecha de Nacimiento:</label>
+                        <label for="Fecha de Nacimiento" class="label ">Fecha de Nacimiento:</label>
                         <input type="text" class="form-control" id="FechanNaciM" name="FechaNaci">
                     </div>
                 </div>
@@ -102,12 +106,12 @@
                    
                 <div class="row p-1">
                                 
-                    <div  class="col-sm-12 col-md-6 col-lg-3 text-center">
+                    <div  class="col-sm-12 col-md-6 col-lg-2 text-center">
                         <button id="btnBuscar" type="button" class="btn btn-secondary w-50 m-3 ">Buscar registro</button>
                         
                     </div>
 
-                    <div  class="col-sm-12 col-md-6 col-lg-3 text-center">
+                    <div  class="col-sm-12 col-md-6 col-lg-2 text-center">
                         <button id="btnNuevo" type="button" class="btn btn-success  w-50 m-3 ">Nuevo registro</button>
                         
                     </div>
@@ -117,6 +121,9 @@
 
                     <div  class="col-sm-12 col-md-6 col-lg-3 text-center">
                         <button id="btnEliminar" type="button" class="btn btn-danger  w-50 m-3 ">Eliminar registro</button>                        
+                    </div>
+                    <div  class="col-sm-12 col-md-6 col-lg-2 text-center">
+                        <button id="btnLimpiar" type="button" class="btn btn-dark  w-50 m-3 ">Limpiar</button>                        
                     </div>
 
                 </div>

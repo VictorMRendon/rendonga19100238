@@ -1,7 +1,7 @@
-create database L19100238;
-use L19100238;
+create database V19100238;
+use V19100238;
 
-create table empleado(
+create table empleados(
 idEmpleado smallint not null auto_increment,
 Nombres varchar(30),
 Apellidos varchar(50),
@@ -16,7 +16,7 @@ Ciudad varchar(35),
 primary key (idEmpleado)
 );
 
-insert into empleado (Nombres, Apellidos, CURP, FechaNaci, Genero, 
+insert into empleados (Nombres, Apellidos, CURP, FechaNaci, Genero, 
 		 Direccion, Telefono, Pais, Estado, Ciudad)
 values ('Victor Manuel','Rendon Garcia','REGV010105HTSNRCA0', '05/01/2001', 'Masculino',
              'Palmera #5642, Col. El Nogal', '8671922323', 'Mexico', 'Tamaulipas', 'Nuevo Laredo');
